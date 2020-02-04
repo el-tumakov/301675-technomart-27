@@ -8,30 +8,40 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <a><img src="img/logo-technomart.svg" width="109" height="19" alt="Логотип интернет-магазина «Техномарт»"></a>
-      <form action="https://echo.htmlacademy.ru" method="get">
-        <label for="header-search" class="visually-hidden">Поиск</label>
-        <input id="header-search" type="text" name="search" placeholder="Поиск">
-      </form>
-      <ul>
-        <li><a href="#">Закладки: 0</a></li>
-        <li><a href="#">Корзина: 0</a></li>
-        <li><a href="#">Оформить заказ</a></li>
-      </ul>
-
-      <div>
-        <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
-        <div>
-          <p>+7 (812) 555-05-55</p>
-          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        </div>
-        <a href="#">Войти</a>
-        <a href="№">Регистрация</a>
+    <header class="header">
+      <div class="header-top">
+        <a class="header-logo">
+          <img src="img/logo-technomart.svg" width="109" height="19" alt="Логотип интернет-магазина «Техномарт»">
+        </a>
+        <form class="search" action="https://echo.htmlacademy.ru" method="get">
+          <label for="header-search" class="visually-hidden">Поиск</label>
+          <input id="header-search" type="text" name="search" placeholder="Поиск">
+        </form>
+        <ul class="shopping-menu">
+          <li>
+            <a href="#">Закладки: 0</a>
+          </li>
+          <li>
+            <a href="#">Корзина: 0</a>
+          </li>
+          <li class="order-place">
+            <a href="#">Оформить заказ</a>
+          </li>
+        </ul>
       </div>
-
-      <nav>
-        <ul>
+      <div>
+        <p class="slogan">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+        <div class="header-contacts">
+          <p class="header-contacts-phone">+7 (812) 555-05-55</p>
+          <p class="header-contacts-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        </div>
+        <ul class="user-menu">
+          <li><a href="#">Войти</a></li>
+          <li><a href="№">Регистрация</a></li>
+        </ul>
+      </div>
+      <nav class="main-navigation">
+        <ul class="site-navigation">
           <li><a>Главная</a></li>
           <li><a href="#">Компания</a></li>
           <li><a href="catalog.html">Каталог</a></li>

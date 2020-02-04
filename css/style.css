@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  vertical-align: middle;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #ee3643;
+}
+
+.button:hover {
+  background-color: #ca2c37;
+}
+
+.button:active {
+  background-color: #ba2732;
+}
+
+.header {
+  font-size: 17px;
+  font-family: "Cuprum", "Arial", sans-serif;
+
+  background-color: #f4f7f9;
+}
+
+.header-top {
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: #293449;
+}
+
+.header-logo {
+  background-color: #ee3643;
+}
+
+.header-logo:hover {
+  background-color: #ca2c37;
+}
+
+.header-logo:active {
+  background-color: #ba2732;
+}
+
+.search input {
+  color: inherit;
+
+  background-color: inherit;
+  border: 0;
+}
+
+.search input::placeholder {
+  color: inherit;
+}
+
+.search input:hover {
+  background-color: #212a3a;
+}
+
+.search input:focus {
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.shopping-menu {
+  list-style: none;
+  text-align: center;
+}
+
+.shopping-menu a {
+  color: inherit;
+}
+
+.shopping-menu a:hover {
+  background-color: #212a3a;
+}
+
+.shopping-menu a:active {
+  background-color: #161d29;
+}
+
+.order-place a {
+  background-color: #63a63e;
+}
+
+.order-place a:hover {
+  background-color: #5fbb2d;
+}
+
+.order-place a:active {
+  background-color: #518534;
+}
+
+.slogan {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 23px;
+  color: #ee3643;
+}
+
+.header-contacts {
+  text-align: center;
+}
+
+.header-contacts-phone {
+  font-size: 21px;
+  line-height: 21px;
+  color: #ee3643;
+}
+
+.header-contacts-address {
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+.user-menu {
+  list-style: none;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.user-menu a {
+  color: inherit;
+
+  background-color: #ffffff;
+}
+
+.user-menu a:hover {
+  color: #ee3643;
+}
+
+.user-menu a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main-navigation {
+  line-height: 17px;
+
+  background-color: #32425c;
+}
+
+.site-navigation {
+  list-style: none;
+  text-align: center;
+  color: #ffffff;
+}
+
+.site-navigation a {
+  color: inherit;
+}
+
+.site-navigation a:hover {
+  background-color: #293449;
+}
