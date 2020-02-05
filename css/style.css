@@ -155,6 +155,21 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.user-menu-exit button {
+  background-color: inherit;
+  border: 0;
+}
+
+.user-menu-orders a,
+.user-menu-account a {
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+  text-decoration: underline;
+
+  background-color: inherit;
+}
+
 .main-navigation {
   line-height: 17px;
 
@@ -173,6 +188,123 @@ a {
 
 .site-navigation a:hover {
   background-color: #293449;
+}
+
+.container h1 {
+  font-size: 30px;
+  line-height: 30px;
+  font-family: "Cuprum", "Arial", sans-serif;
+  color: #32425c;
+  text-transform: uppercase;
+}
+
+.breadcrumbs {
+  list-style: none;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.breadcrumbs a {
+  color: inherit;
+}
+
+.filter {
+  text-transform: uppercase;
+}
+
+.filter fieldset {
+  border: 0;
+}
+
+.filter legend {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.filter ul {
+  list-style: none;
+}
+
+.filter label {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.filter-button {
+  line-height: 18px;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  text-align: center;
+
+  border: 1px solid #e5e5e5;
+}
+
+.catalog-item-name {
+  color: inherit;
+}
+
+.catalog-item-name h3 {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.catalog-button {
+  font-size: 14px;
+  font-family: "Cuprum", "Arial", sans-serif;
+  color: #32425c;
+  text-transform: uppercase;
+
+  background: #ffffff;
+  border: 3px solid #63a63e;
+}
+
+.add-to-cart {
+  color: #ffffff;
+
+  background-color: #63a63e;
+}
+
+.add-to-cart:hover {
+  background-color: #5fbb2d;
+  border-color: #5fbb2d;
+}
+
+.add-to-cart:active {
+  background-color: #518534;
+  border-color: #518534;
+}
+
+.add-to-bookmates:hover {
+  border-color: #32425c;
+}
+
+.add-to-bookmates:active {
+  border-color: #32425c;
+  opacity: 30%;
+}
+
+.price-old {
+  color: #999999;
+  text-decoration: line-through;
+}
+
+.price {
+  color: #ffffff;
+
+  background-color: #ee3643;
 }
 
 .index-columns h2 {
