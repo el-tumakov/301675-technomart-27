@@ -16,12 +16,16 @@ a {
 }
 
 .button {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Cuprum", "Arial", sans-serif;
   vertical-align: middle;
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
 
   background-color: #ee3643;
+  border: 0;
 }
 
 .button:hover {
@@ -46,15 +50,15 @@ a {
   background-color: #293449;
 }
 
-.header-logo {
+.logo {
   background-color: #ee3643;
 }
 
-.header-logo:hover {
+.logo:hover {
   background-color: #ca2c37;
 }
 
-.header-logo:active {
+.logo:active {
   background-color: #ba2732;
 }
 
@@ -169,4 +173,77 @@ a {
 
 .site-navigation a:hover {
   background-color: #293449;
+}
+
+.index-columns h2 {
+  font-size: 30px;
+  line-height: 30px;
+  font-family: "Cuprum", "Arial", sans-serif;
+  text-transform: uppercase;
+}
+
+.delivery-list {
+  list-style: none;
+  font-size: 18px;
+  line-height: 20px;
+  font-family: "Cuprum", "Arial", sans-serif;
+}
+
+.map {
+  border: 0;
+}
+
+.footer {
+  font-family: "Cuprum", "Arial", sans-serif;
+  color: #ffffff;
+}
+
+.footer-top {
+  font-size: 18px;
+  line-height: 24px;
+
+  background-color: #32425c;
+}
+
+.footer-navigation ul {
+  list-style: none;
+}
+
+.footer-navigation a {
+  color: inherit;
+}
+
+.footer-navigation a:hover {
+  text-decoration: underline;
+}
+
+.footer-navigation a:active {
+  opacity: 0.5;
+}
+
+.product-list {
+  color: #ffd180;
+}
+
+.footer-bottom {
+  font-size: 16px;
+  line-height: 18px;
+
+  background-color: #293449;
+}
+
+.footer-bottom a {
+  color: #ffd180;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom a:active {
+  color: #ee3643;
+}
+
+.footer-social ul {
+  list-style: none;
 }
