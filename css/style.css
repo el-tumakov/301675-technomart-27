@@ -26,6 +26,7 @@ a {
 
   background-color: #ee3643;
   border: 0;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -357,11 +358,11 @@ a {
 }
 
 .service-item h3 {
+  font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   font-family: "Cuprum", "Arial", sans-serif;
   color: #32425c;
-  font-weight: 400;
 }
 
 .service-button:hover {
@@ -399,6 +400,15 @@ a {
   text-transform: uppercase;
 }
 
+.filter-header {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  background-color: #f7f3ec;
+}
+
 .filter fieldset {
   border: 0;
 }
@@ -418,12 +428,52 @@ a {
   line-height: 20px;
 }
 
+.price-wrap {
+  font-size: 17px;
+  line-height: 18px;
+
+  background-color: #f7f3ec;
+}
+
+.price-wrap input[type="number"] {
+  text-align: center;
+
+  background-color: inherit;
+  border: 0;
+}
+
+.price-min inp
+
 .filter-button {
   line-height: 18px;
   text-transform: uppercase;
 
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
+}
+
+.sort h2 {
+  font: inherit;
+}
+
+.sort a {
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: underline;
+
+  text-decoration-color: #ee3643;
+  text-decoration-style: dotted;
+  text-underline-position: under;
+}
+
+.sort a:hover {
+  color: #000000;
+
+  text-decoration-style: solid;
+}
+
+.sort .active {
+  color: #ee3643;
+  text-decoration: none;
 }
 
 .catalog-list {
@@ -492,6 +542,42 @@ a {
   color: #ffffff;
 
   background-color: #ee3643;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item {
+  line-height: 18px;
+  text-align: center;
+
+  border: 1px solid #e5e5e5;
+}
+
+.pagination-item:hover {
+  border: 1px solid #bdc6ca;
+}
+
+.pagination-item:active {
+  border: 1px solid #ee3643;
+}
+
+.pagination-item a {
+  color: #000000;
+}
+
+.pagination-current {
+  background-color: #ee3643;
+  border: 0;
+}
+
+.pagination-current a {
+  color: #ffffff;
+}
+
+.product-info {
+  background-color: #f4f7f9;
 }
 
 .footer {
