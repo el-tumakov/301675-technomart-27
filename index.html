@@ -10,27 +10,32 @@
   <body>
     <header class="header">
       <div class="header-top">
-        <a class="logo header-logo">
-          <img src="img/logo-technomart.svg" width="109" height="19" alt="Логотип интернет-магазина «Техномарт»">
-        </a>
-        <form class="search" action="https://echo.htmlacademy.ru" method="get">
-          <label for="header-search" class="visually-hidden">Поиск</label>
-          <input id="header-search" type="text" name="search" placeholder="Поиск">
-        </form>
-        <ul class="shopping-menu">
-          <li class="bookmates">
-            <a href="#">Закладки: 0</a>
-          </li>
-          <li class="cart">
-            <a href="#">Корзина: 0</a>
-          </li>
-          <li class="order-place">
-            <a href="#">Оформить заказ</a>
-          </li>
-        </ul>
+        <div class="container header-wrap">
+          <a class="logo header-logo">
+            <img src="img/logo-technomart.svg" width="109" height="19" alt="Логотип интернет-магазина «Техномарт»">
+          </a>
+          <form class="search" action="https://echo.htmlacademy.ru" method="get">
+            <input id="header-search" type="text" name="search" placeholder="Поиск">
+            <label for="header-search" class="visually-hidden">Поиск</label>
+          </form>
+          <ul class="shopping-menu">
+            <li class="bookmates">
+              <a href="#">Закладки: 0</a>
+            </li>
+            <li class="cart">
+              <a href="#">Корзина: 0</a>
+            </li>
+            <li class="order-place">
+              <a href="#">Оформить заказ</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <p class="slogan">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+      <div class="container header-middle">
+        <p class="slogan">
+          Интернет-магазин <br>
+          строительных материалов <br>
+          и инструментов для ремонта</p>
         <div class="header-contacts">
           <p class="header-contacts-phone">+7 (812) 555-05-55</p>
           <p class="header-contacts-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -41,7 +46,7 @@
         </ul>
       </div>
       <nav class="main-navigation">
-        <ul class="site-navigation">
+        <ul class="container site-navigation">
           <li><a>Главная</a></li>
           <li><a href="#">Компания</a></li>
           <li><a href="catalog.html">Каталог</a></li>
@@ -56,48 +61,50 @@
     <main class="container">
       <h1 class="visually-hidden">Интернет-магазин «Техномарт»</h1>
 
-      <section class="features">
-        <h2 class="visually-hidden">Особенности</h2>
-        <ul class="features-list">
-          <li class="feature-item materials">
-            <h3>Материалы</h3>
-            <a href="#">На любой вкус</a>
-          </li>
-          <li class="feature-item tool">
-            <h3>Инструмент</h3>
-            <a href="#">На все случаи</a>
-          </li>
-          <li class="feature-item technic">
-            <h3>Техника</h3>
-            <a href="#">Для стройки</a>
-          </li>
-          <li class="feature-item discounts">
-            <h3>Скидки 50%</h3>
-            <a href="#">На 350 товаров</a>
-          </li>
-          <li class="feature-item delivery">
-            <h3>Доставка</h3>
-            <a href="#">Бесплатно</a>
-          </li>
-        </ul>
-      </section>
+      <div class="features-wrap">
+        <section class="features">
+          <h2 class="visually-hidden">Особенности</h2>
+          <ul class="features-list">
+            <li class="feature-item materials">
+              <h3>Материалы</h3>
+              <a href="#">На любой вкус</a>
+            </li>
+            <li class="feature-item tool">
+              <h3>Инструмент</h3>
+              <a href="#">На все случаи</a>
+            </li>
+            <li class="feature-item technic">
+              <h3>Техника</h3>
+              <a href="#">Для стройки</a>
+            </li>
+            <li class="feature-item discounts">
+              <h3>Скидки 50%</h3>
+              <a href="#">На 350 товаров</a>
+            </li>
+            <li class="feature-item delivery new-string">
+              <h3>Доставка</h3>
+              <a href="#">Бесплатно</a>
+            </li>
+          </ul>
+        </section>
 
-      <section class="slider">
-        <h2 class="visually-hidden">Список инструментов</h2>
-        <ul class="slider-list">
-          <li class="slider-item rotary-hammers">
-            <h3>Перфораторы</h3>
-            <p>Настоящие мужские игрушки</p>
-          </li>
-          <li class="slider-item drills">
-            <h3>Дрели</h3>
-            <p>Соседям на радость!</p>
-          </li>
-        </ul>
-        <a class="button" href="catalog.html">Открыть каталог</a>
-        <button type="button">Влево</button>
-        <button type="button">Вправо</button>
-      </section>
+        <section class="slider">
+          <h2 class="visually-hidden">Список инструментов</h2>
+          <ul class="slider-list">
+            <li class="slider-item rotary-hammers">
+              <h3>Перфораторы</h3>
+              <p>Настоящие мужские игрушки</p>
+            </li>
+            <li class="slider-item drills">
+              <h3>Дрели</h3>
+              <p>Соседям на радость!</p>
+            </li>
+          </ul>
+          <a class="button" href="catalog.html">Открыть каталог</a>
+          <button class="visually-hidden" type="button">Влево</button>
+          <button class="visually-hidden" type="button">Вправо</button>
+        </section>
+      </div>
 
       <section class="index-columns popular-products">
         <div class="popular-header">
