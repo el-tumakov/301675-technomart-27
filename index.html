@@ -66,10 +66,10 @@
       </nav>
     </header>
 
-    <main class="container">
+    <main class="main-content">
       <h1 class="visually-hidden">Интернет-магазин «Техномарт»</h1>
 
-      <div class="features-wrap">
+      <div class="features-wrap container">
         <section class="features">
           <h2 class="visually-hidden">Особенности</h2>
           <ul class="features-list">
@@ -85,11 +85,11 @@
               <h3>Техника</h3>
               <a href="#">Для стройки</a>
             </li>
-            <li class="feature-item discounts">
+            <li class="feature-item discounts second-string">
               <h3>Скидки 50%</h3>
               <a href="#">На 350 товаров</a>
             </li>
-            <li class="feature-item delivery new-string">
+            <li class="feature-item delivery third-string">
               <h3>Доставка</h3>
               <a href="#">Бесплатно</a>
             </li>
@@ -114,7 +114,7 @@
         </section>
       </div>
 
-      <section class="index-columns popular-products">
+      <section class="popular-products container">
         <div class="popular-header">
           <h2>Популярные товары:</h2>
           <a class="button" href="#">Все популярные товары</a>
@@ -128,8 +128,10 @@
               </h3>
             </a>
             <img src="img/bosch-bfg-9000.jpg" width="218" height="170" alt="Изображение перфоратора BOSCH BFG 9000">
-            <button class="catalog-button add-to-cart" type="button">Купить</button>
-            <button class="catalog-button add-to-bookmates" type="button">В закладки</button>
+            <div class="catalog-buttons">
+              <button class="catalog-button add-to-cart" type="button">Купить</button>
+              <button class="catalog-button add-to-bookmates" type="button">В закладки</button>
+            </div>
             <p class="price-old">32500 Р.</p>
             <a class="price" href="#">25500 Р.</a>
           </li>
@@ -141,8 +143,10 @@
               </h3>
             </a>
             <img src="img/bosch-bfg-3000.jpg" width="218" height="170" alt="Изображение перфоратора BOSCH BFG 3000">
-            <button class="catalog-button add-to-cart" type="button">Купить</button>
-            <button class="catalog-button add-to-bookmates" type="button">В закладки</button>
+            <div class="catalog-buttons">
+              <button class="catalog-button add-to-cart" type="button">Купить</button>
+              <button class="catalog-button add-to-bookmates" type="button">В закладки</button>
+            </div>
             <p class="price-old">22500 Р.</p>
             <a class="price" href="#">15500 Р.</a>
           </li>
@@ -154,8 +158,10 @@
               </h3>
             </a>
             <img src="img/bosch-bfg-2000.jpg" width="218" height="170" alt="Изображение перфоратора BOSCH BFG 2000">
-            <button class="catalog-button add-to-cart" type="button">Купить</button>
-            <button class="catalog-button add-to-bookmates" type="button">В закладки</button>
+            <div class="catalog-buttons">
+              <button class="catalog-button add-to-cart" type="button">Купить</button>
+              <button class="catalog-button add-to-bookmates" type="button">В закладки</button>
+            </div>
             <p class="price-old">30 500Р.</p>
             <a class="price" href="#">25 500 Р.</a>
           </li>
@@ -167,15 +173,17 @@
               </h3>
             </a>
             <img src="img/bosch-bfg-6000.jpg" width="218" height="170" alt="Изображение перфоратора BOSCH BFG 6000">
-            <button class="catalog-button add-to-cart" type="button">Купить</button>
-            <button class="catalog-button add-to-bookmates" type="button">В закладки</button>
+            <div class="catalog-buttons">
+              <button class="catalog-button add-to-cart" type="button">Купить</button>
+              <button class="catalog-button add-to-bookmates" type="button">В закладки</button>
+            </div>
             <p class="price-old"></p>
             <a class="price" href="#">12500 Р.</a>
           </li>
         </ul>
       </section>
 
-      <section class="index-columns popular-manufacture">
+      <section class="popular-manufacture container">
         <div class="popular-header">
           <h2>Популярные производители:</h2>
           <a class="button" href="#">Все производители</a>
@@ -224,53 +232,57 @@
         </ul>
       </section>
 
-      <section class="index-columns services">
-        <h2>Сервисы</h2>
-        <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-        <ul>
-          <li>
-            <button class="service-button service-button-active" type="button">Доставка</button>
-          </li>
-          <li>
-            <button class="service-button" type="button">Гарантия</button>
-          </li>
-          <li>
-            <button class="service-button" type="button">Кредит</button>
-          </li>
-        </ul>
-        <ul class="services-list">
-          <li class="service-item service-delivery">
-            <h3>Доставка</h3>
-            <p>
-              Мы с удовольствием доставим ваш товар прямо <br>
-              к вашему подъезду совершенно бесплатно! <br>
-              Ведь мы неплохо заработаем, <br>
-              поднимая его на ваш этаж!
-            </p>
-          </li>
-          <li class="service-item service-guarantee">
-            <h3>Гарантия</h3>
-            <p>
-              Если купленный у нас товар поломается или заискрит, <br>
-              а также в случае пожара, спровоцированного его возгоранием, <br>
-              вы всегда можете быть уверены в нашей гарантии. Мы обменяем <br>
-              сгоревший товар на новый. <br>
-              Дом уж восстановите как-нибудь сами.
-            </p>
-          </li>
-          <li class="service-item service-credit">
-            <h3>Кредит</h3>
-            <p>
-              Залезть в долговую яму стало проще! <br>
-              Кредитные консультанты придут вам на помощь.
-            </p>
-            <button class="button" type="button">Отправить заявку</button>
-          </li>
-        </ul>
-      </section>
+      <div class="services-wrap">
+        <section class="services container">
+          <h2>Сервисы</h2>
+          <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+          <div class="services-content">
+            <ul>
+              <li>
+                <button class="service-button service-button-active" type="button">Доставка</button>
+              </li>
+              <li>
+                <button class="service-button" type="button">Гарантия</button>
+              </li>
+              <li>
+                <button class="service-button" type="button">Кредит</button>
+              </li>
+            </ul>
+            <ul class="services-list">
+              <li class="service-item service-delivery">
+                <h3>Доставка</h3>
+                <p>
+                  Мы с удовольствием доставим ваш товар прямо <br>
+                  к вашему подъезду совершенно бесплатно! <br>
+                  Ведь мы неплохо заработаем, <br>
+                  поднимая его на ваш этаж!
+                </p>
+              </li>
+              <li class="service-item service-guarantee">
+                <h3>Гарантия</h3>
+                <p>
+                  Если купленный у нас товар поломается или заискрит, <br>
+                  а также в случае пожара, спровоцированного его возгоранием, <br>
+                  вы всегда можете быть уверены в нашей гарантии. Мы обменяем <br>
+                  сгоревший товар на новый. <br>
+                  Дом уж восстановите как-нибудь сами.
+                </p>
+              </li>
+              <li class="service-item service-credit">
+                <h3>Кредит</h3>
+                <p>
+                  Залезть в долговую яму стало проще! <br>
+                  Кредитные консультанты придут вам на помощь.
+                </p>
+                <button class="button" type="button">Отправить заявку</button>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
 
-      <div>
-        <section class="index-columns">
+      <div class="info container">
+        <section>
           <h2>Компания «Техномарт»</h2>
           <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
           <p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
@@ -282,7 +294,7 @@
           <a class="button" href="#">Подробнее о компании</a>
         </section>
 
-        <section class="index-columns">
+        <section>
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис:</p>
           <button class="map" type="button">
