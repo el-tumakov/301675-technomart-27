@@ -73,7 +73,7 @@
         <section class="features">
           <h2 class="visually-hidden">Особенности</h2>
           <ul class="features-list">
-            <li class="feature-item materials">
+            <li class="feature-item materials new">
               <h3>Материалы</h3>
               <a href="#">На любой вкус</a>
             </li>
@@ -98,6 +98,8 @@
 
         <section class="slider">
           <h2 class="visually-hidden">Список инструментов</h2>
+          <input class="visually-hidden slide-1" type="radio" id="slide-1" name="toggle">
+          <input class="visually-hidden slide-2" type="radio" id="slide-2" name="toggle" checked>
           <ul class="slider-list">
             <li class="slider-item rotary-hammers">
               <h3>Перфораторы</h3>
@@ -109,8 +111,12 @@
             </li>
           </ul>
           <a class="button" href="catalog.html">Открыть каталог</a>
-          <button class="visually-hidden" type="button">Влево</button>
-          <button class="visually-hidden" type="button">Вправо</button>
+          <label class="slider-control control-previous" for="slide-1">Влево</label>
+          <label class="slider-control control-next" for="slide-2">Вправо</label>
+          <div class="slider-radio-wrap">
+            <label class="slider-radio" for="slide-1">Первый слайд</label>
+            <label class="slider-radio" for="slide-2">Второй слайд</label>
+          </div>
         </section>
       </div>
 

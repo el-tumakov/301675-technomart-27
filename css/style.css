@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden {
   position: absolute;
 
   width: 1px;
@@ -44,6 +44,11 @@ a {
 }
 
 .button {
+  display: block;
+  min-width: 220px;
+  min-height: 38px;
+  padding-top: 11px;
+
   font-size: 14px;
   line-height: 18px;
   font-family: "Cuprum", "Arial", sans-serif;
@@ -54,6 +59,7 @@ a {
 
   background-color: #ee3643;
   border: 0;
+  border-radius: 3px;
   cursor: pointer;
 }
 
@@ -536,8 +542,7 @@ a {
 .features-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: space-between;
+  width: 960px;
   min-height: 409px;
   margin: 0;
   padding: 0;
@@ -550,6 +555,8 @@ a {
 .feature-item {
   width: 300px;
   min-height: 123px;
+  margin-right: 20px;
+  margin-bottom: 20px;
 
   background-repeat: no-repeat;
   background-position: top center;
@@ -560,7 +567,8 @@ a {
   content: "";
 
   order: 1;
-  width: 100%;
+  width: 640px;
+  height: 123px;
 }
 
 .features-list::after {
@@ -575,8 +583,14 @@ a {
   order: 4;
 }
 
+.feature-item {
+  position: relative;
+}
+
 .feature-item h3 {
   margin: 0;
+  margin-top: 21px;
+  margin-left: 23px;
 
   font-weight: 700;
   font-size: 24px;
@@ -584,12 +598,21 @@ a {
 }
 
 .feature-item a {
+  display: block;
+  width: 135px;
+  height: 38px;
+  margin-top: 12px;
+  margin-left: 25px;
+  padding-top: 11px;
+
   font-size: 14px;
   line-height: 18px;
+  text-align: center;
   color: inherit;
   text-transform: uppercase;
 
   background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
 }
 
 .feature-item a:hover {
@@ -603,30 +626,44 @@ a {
 .materials {
   background-color: #ffbf47;
   background-image: url("../img/icon-1.svg");
+  background-position: 213px 31px;
 }
 
 .tool {
   background-color: #3bbce3;
   background-image: url("../img/icon-2.svg");
+  background-position: 197px 33px;
 }
 
 .technic {
   background-color: #dc91d8;
   background-image: url("../img/icon-3.svg");
+  background-position: 191px 31px;
 }
 
 .discounts {
-  margin-left: auto;
-
   background-color: #8ed78f;
   background-image: url("../img/icon-4.svg");
+  background-position: 196px 26px;
 }
 
 .delivery {
-  margin-left: auto;
-
   background-color: #ffc047;
   background-image: url("../img/icon-5.svg");
+  background-position: 191px 32px;
+}
+
+.new::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 60px;
+  height: 59px;
+
+  background-image: url("../img/new.png");
+  background-repeat: no-repeat;
 }
 
 .slider {
@@ -648,6 +685,7 @@ a {
 .slider-item {
   position: absolute;
 
+  display: none;
   width: 620px;
   height: 266px;
 
@@ -659,18 +697,31 @@ a {
 }
 
 .slider-item h3 {
+  margin: 0;
+  margin-top: 23px;
+  margin-left: 24px;
+
   font-size: 36px;
   line-height: 36px;
   text-transform: uppercase;
 }
 
 .slider-item p {
+  margin: 0;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-left: 25px;
+
   font-size: 18px;
   line-height: 24px;
 }
 
 .slider a {
   position: absolute;
+  bottom: 22px;
+  left: 25px;
+
+  min-width: 195px;
 }
 
 .rotary-hammers {
@@ -679,6 +730,65 @@ a {
 
 .drills {
   background-image: url("../img/slider-2.jpg");
+}
+
+.slider-control {
+  position: absolute;
+  top: 114px;
+
+  width: 22px;
+  height: 40px;
+
+  font-size: 0;
+
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.control-previous {
+  left: 25px;
+
+  background-image: url("../img/icon-left.svg");
+}
+
+.control-next {
+  left: 578px;
+
+  background-image: url("../img/icon-right.svg");
+}
+
+.slider-radio-wrap {
+  position: absolute;
+  bottom: 36px;
+  left: 295px;
+
+  display: flex;
+  min-width: 10px;
+  height: 10px;
+
+  font-size: 0;
+}
+
+.slider-radio {
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+
+  background-color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slide-1:checked ~ .slider-radio-wrap label[for="slide-1"],
+.slide-2:checked ~ .slider-radio-wrap label[for="slide-2"] {
+  background-color: #ee3643;
+  border: 2px solid #ffffff;
+}
+
+.slide-1:checked ~ .slider-list .rotary-hammers,
+.slide-2:checked ~ .slider-list .drills {
+  display: block;
 }
 
 .popular-header {
