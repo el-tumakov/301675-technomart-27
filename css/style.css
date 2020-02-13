@@ -985,12 +985,28 @@ a {
   padding-top: 3px;
 }
 
+.information {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 86px;
+}
+
+.information p {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
 .info {
   display: flex;
+  flex-direction: column;
+  width: 520px;
+  min-height: 396px;
 }
 
 .delivery-list {
-  padding-left: 80px;
+  margin: 0;
+  margin-top: -4px;
+  padding: 0;
 
   list-style: none;
   font-size: 18px;
@@ -998,8 +1014,46 @@ a {
   font-family: "Cuprum", "Arial", sans-serif;
 }
 
+.delivery-list li {
+  position: relative;
+
+  margin-bottom: 20px;
+  padding-left: 37px;
+}
+
+.delivery-list li::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 0;
+
+  width: 25px;
+  height: 2px;
+
+  background-color: #ee3643;
+}
+
+.info .button {
+  width: 220px;
+  margin-top: auto;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
+
 .map {
+  margin-top: 7px;
+  margin-bottom: 25px;
+  padding: 0;
+
   border: 0;
+}
+
+.contacts .button {
+  margin-top: auto;
+  padding-top: 4px;
 }
 
 .catalog-header {
