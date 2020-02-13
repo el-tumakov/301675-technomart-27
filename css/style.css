@@ -534,60 +534,53 @@ a {
 }
 
 .features-wrap {
-  position: relative;
-
   margin-bottom: 53px;
 }
 
 .features-list {
   display: flex;
   flex-wrap: wrap;
-  width: 960px;
   min-height: 409px;
   margin: 0;
   padding: 0;
 
-  list-style: none;
   font-family: "Cuprum", "Arial", sans-serif;
   color: #ffffff;
+}
+
+.first-column,
+.second-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.first-column {
+  width: 620px;
+}
+
+.second-column {
+  justify-content: flex-end;
+  width: 320px;
 }
 
 .feature-item {
   width: 300px;
   min-height: 123px;
-  margin-right: 20px;
-  margin-bottom: 20px;
 
   background-repeat: no-repeat;
-  background-position: top center;
-}
-
-.features-list::before,
-.features-list::after {
-  content: "";
-
-  order: 1;
-  width: 640px;
-  height: 123px;
-}
-
-.features-list::after {
-  order: 3;
-}
-
-.second-string {
-  order: 2;
-}
-
-.third-string {
-  order: 4;
 }
 
 .feature-item {
   position: relative;
+
+  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .feature-item h3 {
+  display: block;
+  width: 160px;
   margin: 0;
   margin-top: 21px;
   margin-left: 23px;
@@ -600,7 +593,7 @@ a {
 .feature-item a {
   display: block;
   width: 135px;
-  height: 38px;
+  min-height: 38px;
   margin-top: 12px;
   margin-left: 25px;
   padding-top: 11px;
@@ -667,10 +660,11 @@ a {
 }
 
 .slider {
-  position: absolute;
-  top: 143px;
+  position: relative;
 
+  width: 620px;
   height: 266px;
+  margin-bottom: 20px;
 
   font-family: "Cuprum", "Arial", sans-serif;
 }
