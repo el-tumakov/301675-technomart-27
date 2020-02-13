@@ -84,8 +84,8 @@
               </div>
               <div class="slider">
                 <h2 class="visually-hidden">Список инструментов</h2>
-                <input class="visually-hidden slide-1" type="radio" id="slide-1" name="toggle">
-                <input class="visually-hidden slide-2" type="radio" id="slide-2" name="toggle" checked>
+                <input class="visually-hidden slide-1" type="radio" id="slide-1" name="slider">
+                <input class="visually-hidden slide-2" type="radio" id="slide-2" name="slider" checked>
                 <ul class="slider-list">
                   <li class="slider-item rotary-hammers">
                     <h3>Перфораторы</h3>
@@ -244,17 +244,20 @@
       <div class="services-wrap">
         <section class="services container">
           <h2>Сервисы</h2>
-          <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+          <p class="service-info">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           <div class="services-content">
-            <ul>
+            <input class="visually-hidden delivery-input" type="radio" id="input-delivery" name="service-radio" checked>
+            <input class="visually-hidden guarantee-input" type="radio" id="input-guarantee" name="service-radio">
+            <input class="visually-hidden credit-input" type="radio" id="input-credit" name="service-radio">
+            <ul class="services-buttons">
               <li>
-                <button class="service-button service-button-active" type="button">Доставка</button>
+                <label class="service-button" for="input-delivery">Доставка</label>
               </li>
               <li>
-                <button class="service-button" type="button">Гарантия</button>
+                <label class="service-button" for="input-guarantee">Гарантия</label>
               </li>
               <li>
-                <button class="service-button" type="button">Кредит</button>
+                <label class="service-button" for="input-credit">Кредит</label>
               </li>
             </ul>
             <ul class="services-list">
