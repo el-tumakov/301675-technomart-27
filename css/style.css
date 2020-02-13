@@ -112,6 +112,10 @@ a {
 }
 
 .logo {
+  display: block;
+
+  text-align: center;
+
   background-color: #ee3643;
   box-shadow: 0 5px 0 0 #b52933;
   cursor: pointer;
@@ -131,8 +135,6 @@ a {
   width: 220px;
   height: 42px;
   padding-top: 13px;
-
-  text-align: center;
 }
 
 .search {
@@ -1352,8 +1354,7 @@ a {
 }
 
 .footer-top {
-  display: flex;
-  justify-content: space-between;
+  min-height: 193px;
 
   font-size: 18px;
   line-height: 24px;
@@ -1361,10 +1362,45 @@ a {
   background-color: #32425c;
 }
 
+.footer-top-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-information {
+  width: 326px;
+}
+
+.footer-logo {
+  width: 220px;
+  height: 63px;
+  margin-bottom: 33px;
+  padding-top: 20px;
+}
+
+.footer-address {
+  margin-left: 3px;
+}
+
+.footer-navigation {
+  width: 614px;
+  padding-top: 14px;
+}
+
 .footer-navigation ul {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin: 0;
+  margin-top: 24px;
+  padding: 0;
 
   list-style: none;
+}
+
+.footer-navigation li {
+  margin-bottom: 10px;
+  margin-left: 60px;
 }
 
 .footer-navigation a {
@@ -1376,6 +1412,8 @@ a {
 }
 
 .footer-navigation a:active {
+  text-decoration: none;
+
   opacity: 0.5;
 }
 
@@ -1384,13 +1422,17 @@ a {
 }
 
 .footer-bottom {
-  display: flex;
-  justify-content: space-between;
-
   font-size: 16px;
   line-height: 18px;
+  min-height: 107px;
 
   background-color: #293449;
+}
+
+.footer-bottom-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 21px;
 }
 
 .footer-bottom a {
@@ -1405,6 +1447,55 @@ a {
   color: #ee3643;
 }
 
+.footer-social {
+  width: 300px;
+  margin-left: 62px;
+}
+
 .footer-social ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 14px;
+
   list-style: none;
+  font-size: 0;
+}
+
+.social-link {
+  display: block;
+  width: 42px;
+  height: 42px;
+  margin-right: 3px;
+  margin-bottom: 3px;
+
+  background-color: #212a3a;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 50%;
+}
+
+.vkontakte {
+  background-image: url("../img/icon-vk.svg");
+}
+
+.facebook {
+  background-image: url("../img/icon-fb.svg");
+}
+
+.instagram {
+  background-image: url("../img/icon-insta.svg");
+}
+
+.social-link:hover {
+  background-color: #ee3643;
+}
+
+.footer-feedback {
+  margin-right: 53px;
+  margin-left: auto;
+}
+
+.footer-copyright {
+  margin-right: 13px;
 }
