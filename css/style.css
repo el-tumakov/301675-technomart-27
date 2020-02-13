@@ -810,7 +810,7 @@ a {
 }
 
 .popular-manufacture {
-  margin-bottom: 65px;
+  margin-bottom: 45px;
 }
 
 .manufactures-list {
@@ -824,6 +824,9 @@ a {
 }
 
 .manufacture-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 220px;
   height: 145px;
   margin-right: 20px;
