@@ -378,32 +378,36 @@
       </div>
     </footer>
 
-    <section>
+    <section class="popup bigmap">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <p>
         <img src="img/map-big.png" width="940" height="446" alt="Офис компании по адресу Большая Конюшенная 19, Санкт-Петербург">
       </p>
-      <button type="button">Закрыть</button>
+      <button class="close" type="button">Закрыть</button>
     </section>
 
-    <section>
+    <section class="popup feedback">
       <h2 class="visually-hidden">Обратная связь</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label for="message-name">Ваше имя:</label>
-          <input id="message-name" type="text" name="name" placeholder="Имя Фамилия" required>
-        </p>
-        <p>
-          <label for="message-email">Ваш e-mail:</label>
-          <input id="message-name" type="email" name="email" placeholder="email@example.com" required>
-        </p>
-        <p>
-          <label for="message-content">Текст письма:</label>
-          <textarea id="message-content" name="content" placeholder="В свободной форме" required></textarea>
-        </p>
-        <button type="submit">Отправить</button>
+        <div class="feedback-inputs-wrap">
+          <p>
+            <label for="message-name">Ваше имя:</label>
+            <input id="message-name" type="text" name="name" placeholder="Имя Фамилия" required>
+          </p>
+          <p>
+            <label for="message-email">Ваш e-mail:</label>
+            <input id="message-name" type="email" name="email" placeholder="email@example.com" required>
+          </p>
+          <p>
+            <label for="message-content">Текст письма:</label>
+            <textarea id="message-content" name="content" placeholder="В свободной форме" required></textarea>
+          </p>
+        </div>
+        <div class="feedback-submit-wrap">
+          <button class="feedback-submit button" type="submit">Отправить</button>
+        </div>
       </form>
-      <button type="button">Закрыть</button>
+      <button class="close" type="button">Закрыть</button>
     </section>
   </body>
 </html>

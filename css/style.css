@@ -1422,9 +1422,10 @@ a {
 }
 
 .footer-bottom {
+  min-height: 107px;
+
   font-size: 16px;
   line-height: 18px;
-  min-height: 107px;
 
   background-color: #293449;
 }
@@ -1498,4 +1499,123 @@ a {
 
 .footer-copyright {
   margin-right: 13px;
+}
+
+.popup {
+  position: relative;
+}
+
+.bigmap {
+  width: 940px;
+  height: 446.2px;
+
+  box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.75);
+}
+
+.feedback {
+  width: 620px;
+  min-height: 430px;
+
+  border-top: 7px solid #ee3643;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
+}
+
+.feedback-inputs-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 80px;
+  padding-top: 34px;
+}
+
+.feedback p {
+  margin-bottom: 8px;
+}
+
+.feedback label {
+  display: block;
+  margin-bottom: 9px;
+
+  font-size: 18px;
+  line-height: 18px;
+  font-family: "Cuprum", "Arial", sans-serif;
+}
+
+.feedback input {
+  width: 220px;
+  min-height: 38px;
+  padding-left: 16px;
+}
+
+.feedback textarea {
+  width: 460px;
+  height: 114px;
+  padding-top: 8px;
+
+  resize: none;
+}
+
+.feedback input,
+.feedback input::placeholder,
+.feedback textarea,
+.feedback textarea::placeholder {
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: #a9a9a9;
+}
+
+.feedback input::-moz-placeholder {
+  line-height: 30px;
+  color: #a9a9a9;
+}
+
+.feedback input:-ms-input-placeholder,
+.feedback textarea:-ms-input-placeholder {
+  color: #a9a9a9;
+}
+
+.feedback input,
+.feedback textarea {
+  padding-left: 13px;
+
+  color: #000000;
+
+  border: 2px solid #dee3e4;
+}
+
+.feedback-submit-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 1px;
+  min-height: 112px;
+  margin-top: 21px;
+  padding: 0 80px;
+
+  background-color: #f4f4f4;
+}
+
+.feedback-submit {
+  padding-top: 4px;
+}
+
+.close {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+
+  width: 21px;
+  height: 21px;
+  margin: 0;
+  padding: 0;
+
+  font-size: 0;
+
+  background-color: transparent;
+  background-image: url("../img/icon-close.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 0;
+  cursor: pointer;
 }
