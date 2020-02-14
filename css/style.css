@@ -1079,6 +1079,7 @@ a {
 .catalog-header h1 {
   order: 1;
   margin: 0;
+  margin-bottom: 20px;
   padding: 30px 28px;
 
   background-color: #f2f6f8;
@@ -1136,19 +1137,38 @@ a {
 }
 
 .filter {
+  width: 220px;
+
   text-transform: uppercase;
 }
 
-.filter-header {
+.filter .filter-header {
+  margin: 0;
+  margin-bottom: 11px;
+  padding: 10px 0;
+  padding-left: 19px;
+
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
+  font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
 
   background-color: #f7f3ec;
+  border-radius: 3px;
 }
 
 .filter fieldset {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  padding-bottom: 25px;
+
+  border: 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.filter fieldset:last-of-type {
   border: 0;
 }
 
@@ -1167,28 +1187,195 @@ a {
   line-height: 20px;
 }
 
+.filter .price-filter {
+  margin-bottom: 16px;
+  padding-bottom: 25px;
+}
+
 .price-wrap {
   font-size: 17px;
   line-height: 18px;
 
   background-color: #f7f3ec;
+  border-radius: 3px;
 }
 
-.price-wrap input[type="number"] {
+.price-range {
+  position: relative;
+
+  width: 100%;
+  height: 80px;
+  margin-top: 14px;
+  margin-bottom: 9px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.scale {
+  height: 2px;
+
+  background-color: #d7dcde;
+}
+
+.bar {
+  width: 84%;
+  height: 2px;
+
+  background-color: #00ca74;
+}
+
+.toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+
+  box-sizing: content-box;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  background-color: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
+}
+
+.toggle-min {
+  left: 20px;
+}
+
+.toggle-max {
+  left: 160px;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  text-align: center;
+}
+
+.min-price,
+.max-price {
+  max-width: 95px;
+  height: 38px;
+  padding-bottom: 4px;
+
   text-align: center;
 
-  background-color: inherit;
   border: 0;
+
+  -moz-appearance: textfield;
 }
 
-.price-min inp
+.price-controls input::-webkit-outer-spin-button,
+.price-controls input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.filter .checkbox-filter {
+  margin-bottom: 17px;
+  padding-bottom: 3px;
+}
+
+.checkbox-filter ul,
+.radio-filter ul {
+  padding: 0;
+}
+
+.checkbox-filter li,
+.radio-filter li {
+  min-height: 23px;
+  margin-bottom: 16px;
+}
+
+.checkbox-filter label,
+.radio-filter label {
+  position: relative;
+
+  padding-left: 35px;
+
+  cursor: pointer;
+}
+
+.checkbox-filter label::before,
+.radio-filter label::before {
+  content: "";
+  position: absolute;
+
+  background-repeat: no-repeat;
+  opacity: 0.79;
+}
+
+.checkbox-filter label::before {
+  top: -1px;
+  left: 0;
+
+  width: 27px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-off.svg");
+}
+
+.radio-filter label::before {
+  top: -2px;
+  left: -1px;
+
+  width: 25px;
+  height: 25px;
+
+  background-image: url("../img/radio-off.svg");
+}
+
+.checkbox-filter input:checked ~ label::before {
+  background-image: url("../img/checkbox-on.svg");
+}
+
+.radio-filter input:checked ~ label::before {
+  background-image: url("../img/radio-on.svg");
+}
+
+.checkbox-filter label:hover::before,
+.radio-filter label:hover::before {
+  opacity: 1;
+}
+
+.checkbox-filter input:disabled ~ label,
+.radio-filter input:disabled ~ label {
+  opacity: 0.3;
+}
+
+.filter .radio-filter {
+  margin-bottom: 34px;
+}
+
+.radio-filter legend {
+  letter-spacing: 0.6px;
+}
 
 .filter-button {
+  width: 140px;
+  min-height: 38px;
+
   line-height: 18px;
   text-transform: uppercase;
 
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.filter-button:hover {
+  border-color: #bdc6ca;
+}
+
+.filter-button:active {
+  border-color: #ee3643;
+  outline: 0;
 }
 
 .sort h2 {

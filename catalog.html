@@ -102,52 +102,54 @@
           <fieldset class="price-filter">
             <legend>Цена:</legend>
             <div class="price-range price-wrap">
-              <label class="visually-hidden" for="filter-price">Диапазон цен</label>
-              <input class="visually-hidden" id="filter-price" type="range" name="price">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
             </div>
-            <div class="price-min price-wrap">
+            <div class="price-controls">
               <label class="visually-hidden" for="filter-price-min">Минимальная цена</label>
-              <input id="filter-price-min" type="number" name="price-min" value="0">
-            </div>
-            <div class="price-max price-wrap">
+              <input class="min-price price-wrap" id="filter-price-min" type="number" name="price-min" value="0">
+              <span>—</span>
               <label class="visually-hidden" for="filter-price-max">Максимальная цена</label>
-              <input id="filter-price-max" type="number" name="price-max" value="30000">
+              <input class="max-price price-wrap" id="filter-price-max" type="number" name="price-max" value="30000">
             </div>
           </fieldset>
-          <fieldset>
+          <fieldset class="checkbox-filter">
             <legend>Производители:</legend>
             <ul>
               <li>
-                <input id="filter-bosch" type="checkbox" name="bosch" checked>
+                <input class="visually-hidden" id="filter-bosch" type="checkbox" name="bosch" checked>
                 <label for="filter-bosch">Bosch</label>
               </li>
               <li>
-                <input id="filter-interskol" type="checkbox" name="interskol">
+                <input class="visually-hidden" id="filter-interskol" type="checkbox" name="interskol">
                 <label for="filter-interskol">Интерскол</label>
               </li>
               <li>
-                <input id="filter-makita" type="checkbox" name="makita" checked>
+                <input class="visually-hidden" id="filter-makita" type="checkbox" name="makita" checked>
                 <label for="filter-makita">Makita</label>
               </li>
               <li>
-                <input id="filter-dewalt" type="checkbox" name="dewalt">
+                <input class="visually-hidden" id="filter-dewalt" type="checkbox" name="dewalt">
                 <label for="filter-dewalt">Dewalt</label>
               </li>
               <li>
-                <input id="filter-hitachi" type="checkbox" name="hitachi">
+                <input class="visually-hidden" id="filter-hitachi" type="checkbox" name="hitachi">
                 <label for="filter-hitachi">Hitachi</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="radio-filter">
             <legend>Питание:</legend>
             <ul>
               <li>
-                <input id="filter-battery" type="radio" name="energy" value="battery" checked>
-                <label for="filter-bosch">Аккумуляторные</label>
+                <input class="visually-hidden" id="filter-battery" type="radio" name="energy" value="battery" checked>
+                <label for="filter-battery">Аккумуляторные</label>
               </li>
               <li>
-                <input id="filter-power" type="radio" name="energy" value="power">
+                <input class="visually-hidden" id="filter-power" type="radio" name="energy" value="power">
                 <label for="filter-power">Сетевые</label>
               </li>
             </ul>
