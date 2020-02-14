@@ -95,6 +95,10 @@ a {
   background-color: #f4f7f9;
 }
 
+.inner-header {
+  margin-bottom: 8px;
+}
+
 .header-top {
   min-height: 42px;
   margin-bottom: 46px;
@@ -531,7 +535,7 @@ a {
 .container h1 {
   font-weight: 400;
   font-size: 30px;
-  line-height: 30px;
+  line-height: 29px;
   font-family: "Cuprum", "Arial", sans-serif;
   color: #32425c;
   text-transform: uppercase;
@@ -1074,21 +1078,61 @@ a {
 
 .catalog-header h1 {
   order: 1;
-  padding: 33px 30px;
+  margin: 0;
+  padding: 30px 28px;
 
   background-color: #f2f6f8;
 }
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  padding: 0;
 
   list-style: none;
   line-height: 18px;
   text-transform: uppercase;
 }
 
-.breadcrumbs a {
+.breadcrumb-link {
+  display: block;
+  margin-right: 17px;
+  margin-bottom: 10px;
+  padding-left: 26px;
+
   color: inherit;
+
+  background-image: url("../img/icon-right-small.svg");
+  background-repeat: no-repeat;
+  background-position: 0 2px;
+}
+
+.breadcrumb-main {
+  position: relative;
+  top: 2px;
+  left: -2px;
+
+  width: 16px;
+  height: 16px;
+  margin-right: 12px;
+  padding: 0;
+
+  font-size: 0;
+
+  background-image: none;
+}
+
+.breadcrumb-link:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-link:active {
+  opacity: 0.5;
+}
+
+.breadcrumb-main:hover path {
+  fill: #293449;
 }
 
 .filter {
