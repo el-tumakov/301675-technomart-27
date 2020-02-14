@@ -1585,6 +1585,18 @@ a {
   color: #000000;
 
   border: 2px solid #dee3e4;
+  border-radius: 3px;
+}
+
+.feedback input:hover,
+.feedback textarea:hover {
+  border-color: #b5b5b5;
+}
+
+.feedback input:focus,
+.feedback textarea:focus {
+  border-color: #ee3643;
+  outline: 0;
 }
 
 .feedback-submit-wrap {
