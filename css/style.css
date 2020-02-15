@@ -1142,7 +1142,7 @@ a {
   text-transform: uppercase;
 }
 
-.filter .filter-header {
+.catalog-wrap .filter-header {
   margin: 0;
   margin-bottom: 11px;
   padding: 10px 0;
@@ -1378,8 +1378,54 @@ a {
   outline: 0;
 }
 
+.products-list-wrap {
+  width: 700px;
+}
+
+.products-list-wrap .sort {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+}
+
 .sort h2 {
+  margin: 0;
+  margin-right: 140px;
+
   font: inherit;
+}
+
+.sort-price {
+  margin-right: 70px;
+}
+
+.sort-type {
+  margin-right: 66px;
+}
+
+.sort-function {
+  margin-right: 46px;
+}
+
+.sort-up {
+  margin-right: 21px;
+}
+
+.sort-up,
+.sort-down {
+  display: block;
+  width: 11px;
+  height: 10px;
+  padding-top: 4px;
+
+  font-size: 0;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.sort-order-active path {
+  fill: #ee3643;
 }
 
 .sort a {
@@ -1397,6 +1443,11 @@ a {
   text-decoration-style: solid;
 }
 
+.sort-up:hover path,
+.sort-down:hover path {
+  fill: #000000;
+}
+
 .sort .active {
   color: #ee3643;
   text-decoration: none;
@@ -1410,6 +1461,10 @@ a {
   padding-top: 20px;
 
   list-style: none;
+}
+
+.catalog-page .catalog-list {
+  margin-bottom: 32px;
 }
 
 .catalog-item {
@@ -1431,6 +1486,18 @@ a {
 }
 
 .catalog-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.catalog-page .catalog-item {
+  margin-bottom: 19px;
+}
+
+.catalog-page .catalog-item:nth-child(4n) {
+  margin-right: 20px;
+}
+
+.catalog-page .catalog-item:nth-child(3n) {
   margin-right: 0;
 }
 
@@ -1545,35 +1612,48 @@ a {
 }
 
 .pagination-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+  text-transform: uppercase;
 }
 
-.pagination-item {
+.pagination-link {
+  display: block;
+  min-width: 38px;
+  height: 38px;
+  margin-right: 10px;
+  padding-top: 9px;
+
   line-height: 18px;
   text-align: center;
+  color: #000000;
 
   border: 1px solid #e5e5e5;
+  border-radius: 3px;
 }
 
-.pagination-item:hover {
+.pagination-link:hover {
   border: 1px solid #bdc6ca;
 }
 
-.pagination-item:active {
+.pagination-link:active {
   border: 1px solid #ee3643;
 }
 
-.pagination-item a {
-  color: #000000;
-}
-
 .pagination-current {
+  color: #ffffff;
+
   background-color: #ee3643;
-  border: 0;
+  border-color: #ee3643;
 }
 
-.pagination-current a {
-  color: #ffffff;
+.pagination-next {
+  padding-right: 32px;
+  padding-left: 32px;
 }
 
 .product-info-wrap {
