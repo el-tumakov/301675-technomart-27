@@ -8,22 +8,22 @@ var bookmatesCount = document.querySelector(".bookmates span");
 var cart = document.querySelector(".cart");
 var cartCount = document.querySelector(".cart span");
 
-purchaseButtons.forEach(function (itm) {
-  itm.addEventListener("click", function (evt) {
+for (var i = 0; i < purchaseButtons.length; i++) {
+  purchaseButtons[i].addEventListener("click", function (evt) {
     evt.preventDefault();
     purchasePopup.classList.add("popup-show");
     cart.classList.add("shopping-link-active");
     cartCount.innerHTML = parseInt(cartCount.innerHTML) + 1;
   });
-});
+}
 
-bookmateButtons.forEach(function (itm) {
-  itm.addEventListener("click", function (evt) {
+for (var i = 0; i < bookmateButtons.length; i++) {
+  bookmateButtons[i].addEventListener("click", function (evt) {
     evt.preventDefault();
     bookmates.classList.add("shopping-link-active");
     bookmatesCount.innerHTML = parseInt(bookmatesCount.innerHTML) + 1;
   });
-});
+}
 
 purchaseResume.addEventListener("click", function (evt) {
   evt.preventDefault();
