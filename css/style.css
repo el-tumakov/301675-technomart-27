@@ -1047,7 +1047,11 @@ a {
 }
 
 .service-item p {
-  width: 380px;
+  width: 375px;
+}
+
+.service-delivery p {
+  width: 278px;
 }
 
 .service-item button {
@@ -1072,6 +1076,10 @@ a {
   flex-direction: column;
   width: 520px;
   min-height: 396px;
+}
+
+.info .slim-paragraph {
+  width: 440px;
 }
 
 .delivery-list {
@@ -1112,6 +1120,10 @@ a {
 .contacts {
   display: flex;
   flex-direction: column;
+}
+
+.contacts p {
+  width: 210px;
 }
 
 .map {
@@ -1756,6 +1768,10 @@ a {
   background-color: #f4f7f9;
 }
 
+.product-info p {
+  width: 910px;
+}
+
 .footer {
   font-family: "Cuprum", "Arial", sans-serif;
   color: #ffffff;
@@ -1848,6 +1864,10 @@ a {
   padding-top: 21px;
 }
 
+.footer-company {
+  width: 250px;
+}
+
 .footer-bottom a {
   color: #ffd180;
 }
@@ -1862,7 +1882,7 @@ a {
 
 .footer-social {
   width: 300px;
-  margin-left: 62px;
+  margin-left: 38px;
 }
 
 .footer-social ul {
@@ -1905,11 +1925,13 @@ a {
 }
 
 .footer-feedback {
+  width: 135px;
   margin-right: 53px;
   margin-left: auto;
 }
 
 .footer-copyright {
+  width: 98px;
   margin-right: 13px;
 }
 
