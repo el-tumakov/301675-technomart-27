@@ -309,6 +309,10 @@ a {
   opacity: 0.5;
 }
 
+.shopping-link-active {
+  background-color: #ee3643;
+}
+
 .order-place {
   background-color: #63a63e;
 }
@@ -1994,6 +1998,8 @@ a {
 .purchase {
   width: 620px;
   min-height: 282px;
+  margin-top: -141px;
+  margin-left: -310px;
   padding-top: 40px;
 
   font-family: "Cuprum", "Arial", sans-serif;
