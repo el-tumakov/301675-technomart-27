@@ -1,3 +1,43 @@
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -1058,6 +1098,7 @@ a {
   padding: 0;
 
   border: 0;
+  cursor: pointer;
 }
 
 .contacts .button {
@@ -1817,19 +1858,42 @@ a {
 }
 
 .popup {
-  position: relative;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+
+  display: none;
+
+  background-color: #ffffff;
 }
 
 .bigmap {
   width: 940px;
-  height: 446.2px;
+  height: 446px;
+  margin-top: -223px;
+  margin-left: -470px;
 
   box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.75);
+}
+
+.bigmap iframe {
+  position: relative;
+  z-index: 2;
+}
+
+.bigmap div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .feedback {
   width: 620px;
   min-height: 430px;
+  margin-top: -215px;
+  margin-left: -310px;
 
   border-top: 7px solid #ee3643;
   box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
@@ -1987,6 +2051,7 @@ a {
   position: absolute;
   top: 9px;
   right: 9px;
+  z-index: 2;
 
   width: 21px;
   height: 21px;
@@ -2001,4 +2066,14 @@ a {
   background-position: center center;
   border: 0;
   cursor: pointer;
+}
+
+.popup-show {
+  display: block;
+
+  animation: bounce 0.6s;
+}
+
+.feedback-error {
+  animation: shake 0.6s;
 }

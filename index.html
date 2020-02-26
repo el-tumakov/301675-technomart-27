@@ -318,7 +318,7 @@
           <button class="map" type="button">
             <img src="img/map-small.png" width="300" height="158" alt="Офис компании по адресу Большая Конюшенная, 19, Санкт-Петербург">
           </button>
-          <button class="button" type="button">Заблудились? Напишите нам!</button>
+          <button class="button feedback-button" type="button">Заблудились? Напишите нам!</button>
         </section>
       </div>
     </main>
@@ -380,27 +380,28 @@
 
     <section class="popup bigmap">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5769169308242!2d30.322621958816832!3d59.93916232215763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1582703164863!5m2!1sru!2sru" width="940" height="446" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      <div>
         <img src="img/map-big.png" width="940" height="446" alt="Офис компании по адресу Большая Конюшенная 19, Санкт-Петербург">
-      </p>
+      </div>
       <button class="close" type="button">Закрыть</button>
     </section>
 
-    <section class="popup feedback">
+    <section class="popup feedback container">
       <h2 class="visually-hidden">Обратная связь</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
         <div class="feedback-inputs-wrap">
           <p>
             <label for="message-name">Ваше имя:</label>
-            <input id="message-name" type="text" name="name" placeholder="Имя Фамилия" required>
+            <input id="message-name" type="text" name="name" placeholder="Имя Фамилия">
           </p>
           <p>
             <label for="message-email">Ваш e-mail:</label>
-            <input id="message-name" type="email" name="email" placeholder="email@example.com" required>
+            <input id="message-email" type="email" name="email" placeholder="email@example.com">
           </p>
           <p>
             <label for="message-content">Текст письма:</label>
-            <textarea id="message-content" name="content" placeholder="В свободной форме" required></textarea>
+            <textarea id="message-content" name="content" placeholder="В свободной форме"></textarea>
           </p>
         </div>
         <div class="feedback-submit-wrap">
@@ -409,5 +410,8 @@
       </form>
       <button class="close" type="button">Закрыть</button>
     </section>
+
+    <script src="js/popup-feedback.js"></script>
+    <script src="js/popup-map.js"></script>
   </body>
 </html>
