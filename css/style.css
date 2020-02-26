@@ -177,7 +177,7 @@ a {
 
 .header-logo {
   width: 220px;
-  height: 42px;
+  min-height: 42px;
   padding-top: 13px;
 }
 
@@ -197,7 +197,7 @@ a {
 
 .search input {
   width: 270px;
-  height: 42px;
+  min-height: 42px;
   padding-left: 49px;
 
   color: inherit;
@@ -250,8 +250,8 @@ a {
   position: relative;
 
   display: block;
-  width: 150px;
-  height: 42px;
+  min-width: 150px;
+  min-height: 42px;
   padding-top: 12px;
 
   color: inherit;
@@ -269,7 +269,8 @@ a {
 
 .bookmates,
 .cart {
-  padding-left: 19px;
+  padding-right: 22px;
+  padding-left: 40px;
 }
 
 .bookmates:active,
@@ -344,6 +345,7 @@ a {
 }
 
 .header-contacts {
+  width: 270px;
   margin-left: 70px;
 
   text-align: center;
@@ -393,10 +395,18 @@ a {
   line-height: 21px;
 }
 
+.user-menu li {
+  background-color: #ffffff;
+}
+
+.registration-item {
+  margin-left: 10px;
+}
+
 .user-menu-link {
   display: block;
-  width: 121px;
-  height: 45px;
+  min-width: 121px;
+  min-height: 45px;
   padding-top: 12px;
 
   text-align: center;
@@ -416,7 +426,8 @@ a {
 .login {
   position: relative;
 
-  padding-left: 22px;
+  padding-right: 18px;
+  padding-left: 40px;
 }
 
 .login svg {
@@ -426,14 +437,13 @@ a {
 }
 
 .registration {
-  width: 150px;
-  margin-left: 10px;
+  min-width: 150px;
 }
 
 .user {
   position: relative;
 
-  width: 254px;
+  min-width: 254px;
   padding-left: 24px;
 }
 
@@ -446,7 +456,7 @@ a {
 .logout {
   position: relative;
 
-  width: 45px;
+  min-width: 45px;
 
   font-size: 0;
 
