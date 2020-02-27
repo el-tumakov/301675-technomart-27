@@ -383,7 +383,6 @@ a {
 
 .user-menu {
   display: flex;
-  flex-wrap: wrap;
   justify-content: flex-end;
   align-content: flex-start;
   width: 300px;
@@ -397,6 +396,10 @@ a {
 
 .user-menu li {
   background-color: #ffffff;
+}
+
+.user-item {
+  overflow: hidden;
 }
 
 .registration-item {
@@ -444,7 +447,8 @@ a {
   position: relative;
 
   min-width: 254px;
-  padding-left: 24px;
+  padding-right: 16px;
+  padding-left: 40px;
 }
 
 .user svg {
